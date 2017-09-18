@@ -5,9 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 public class FormActivity extends AppCompatActivity {
 
@@ -24,12 +23,15 @@ public class FormActivity extends AppCompatActivity {
                 String document = ((EditText) findViewById(R.id.document)).getText().toString();
                 String phone = ((EditText) findViewById(R.id.phone)).getText().toString();
                 String email = ((EditText) findViewById(R.id.email)).getText().toString();
-                if(!name.equals(null)) {
+                Boolean acceptEmail = ((CheckBox) findViewById(R.id.accept_email)).isChecked();
+
+                if(!name.isEmpty()) {
                     Intent intent = new Intent(FormActivity.this, InfoActivity.class);
                     intent.putExtra("name",name);
                     intent.putExtra("document",document);
                     intent.putExtra("phone",phone);
                     intent.putExtra("email",email);
+                    intent.putExtra("accept_email",acceptEmail);
                     startActivity(intent);
                     finish();
                 }

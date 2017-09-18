@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class InfoActivity extends AppCompatActivity {
@@ -33,6 +32,11 @@ public class InfoActivity extends AppCompatActivity {
         emailTv.setText(intent.getStringExtra("email"));
         emailTv.setTextSize(16);
         emailTv.setTextColor(Color.BLACK);
+        TextView acceptEmailTv = (TextView) findViewById(R.id.accept_email);
+        String accept = ((intent.getBooleanExtra("accept_email", true)) ? "SI": "NO");
+        acceptEmailTv.setText(accept);
+        acceptEmailTv.setTextSize(16);
+        acceptEmailTv.setTextColor(Color.BLACK);
 
         Button buttonSave = (Button) findViewById(R.id.form_button);
         buttonSave.setOnClickListener(new View.OnClickListener() {

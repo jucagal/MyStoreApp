@@ -6,6 +6,7 @@
     <string name="city">Ciudad</string>
     <string name="phone">Teléfono</string>
     <string name="email">Correo</string>
+    <string name="accept_email">Enviarme ofertas al correo</string>
     <string name="action_form">Guardar</string>
     <string name="action_info">Salir</string>
 </resources>

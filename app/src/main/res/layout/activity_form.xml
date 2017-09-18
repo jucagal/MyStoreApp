@@ -21,13 +21,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/name" />
-
             <EditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName" />
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -43,7 +41,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/phone" />
-
             <EditText
                 android:id="@+id/phone"
                 android:layout_width="match_parent"
@@ -54,19 +51,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/email" />
-
             <EditText
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress" />
 
+            <CheckBox
+                android:id="@+id/accept_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/accept_email" />
+
             <Button
                 android:id="@+id/form_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:textSize="16dp"
                 android:layout_marginTop="20dp"
                 android:hint="@string/action_form"
                 android:textStyle="bold" />
